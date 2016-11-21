@@ -9,7 +9,7 @@ Latest manuscript: https://arxiv.org/pdf/1204.3830v4.pdf
 
 Here you will find the sources/binaries of the code in the paper containing a simple API. Due to multiple requests, I am releasing the source code in a rather raw form without documentation so use with discretion. The source is slightly newer than the binary release. To use the binary/API, you will need an x64 machine with 4-8GB memory, a 64bit JRE/JDK. You will also need to have an appropriate 64bit version of Gurobi installed (an academic license is free to obtain). Then you need to find the gurobi.jar and make sure that the Gurobi binaries are on your system path. 
 
-For direct use, grab Main.java and mapp.jar under the bytecode folder. instances.zip containts examples used in the paper and source folder contains all source files for those who would like 
+For direct use, grab Main.java and mapp.jar under the bytecode folder. instances.zip contains examples used in the paper and the source folder contains all source files for those who would like 
 to tinker more.
 
 OK, assuming you have everything setup correctly, to try a randomly created 16-puzzle, you can run from command line the following:
