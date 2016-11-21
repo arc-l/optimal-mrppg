@@ -14,48 +14,45 @@ to tinker more.
 
 OK, assuming you have everything setup correctly, to try a randomly created 16-puzzle, you can run from command line the following:
 
-'''
-> java -cp mapp.jar;gurobi.jar projects.multipath.advanced.Main 1
-'''
+>java -cp mapp.jar;gurobi.jar projects.multipath.advanced.Main 1
 
 You should get an output similar to the following:
 
-'''
-> Solving a randomly generated 16-puzzle, generally solvable in 60 seconds on an intel dual core x64 machine. 
+>Solving a randomly generated 16-puzzle, generally solvable in 60 seconds on an intel dual core x64 machine. 
 
-Start and goal vertices: 16 pairs
-0(0,0) 1(1,0) 2(2,0) 3(3,0) 4(0,1) 5(1,1) 6(2,1) 7(3,1) 8(0,2) 9(1,2) 10(2,2) 11(3,2) 12(0,3) 13(1,3) 14(2,3) 15(3,3)
-5(1,1) 0(0,0) 1(1,0) 9(1,2) 3(3,0) 11(3,2) 7(3,1) 8(0,2) 13(1,3) 12(0,3) 6(2,1) 15(3,3) 4(0,1) 2(2,0) 10(2,2) 14(2,3)
+>Start and goal vertices: 16 pairs
+>0(0,0) 1(1,0) 2(2,0) 3(3,0) 4(0,1) 5(1,1) 6(2,1) 7(3,1) 8(0,2) 9(1,2) 10(2,2) 11(3,2) 12(0,3) 13(1,3) 14(2,3) 15(3,3)
+>5(1,1) 0(0,0) 1(1,0) 9(1,2) 3(3,0) 11(3,2) 7(3,1) 8(0,2) 13(1,3) 12(0,3) 6(2,1) 15(3,3) 4(0,1) 2(2,0) 10(2,2) 14(2,3)
 
-Solution path set:
+>Solution path set:
 
-Agent 0: 0:0(0,0) 1:4(0,1) 2:8(0,2) 3:8(0,2) 4:4(0,1) 5:5(1,1)
-Agent 1: 0:1(1,0) 1:0(0,0) 2:4(0,1) 3:4(0,1) 4:0(0,0) 5:0(0,0)
-Agent 2: 0:2(2,0) 1:1(1,0) 2:0(0,0) 3:0(0,0) 4:1(1,0) 5:1(1,0)
-Agent 3: 0:3(3,0) 1:3(3,0) 2:7(3,1) 3:11(3,2) 4:10(2,2) 5:9(1,2)
-Agent 4: 0:4(0,1) 1:5(1,1) 2:1(1,0) 3:2(2,0) 4:3(3,0) 5:3(3,0)
-Agent 5: 0:5(1,1) 1:6(2,1) 2:2(2,0) 3:3(3,0) 4:7(3,1) 5:11(3,2)
-Agent 6: 0:6(2,1) 1:2(2,0) 2:3(3,0) 3:7(3,1) 4:6(2,1) 5:7(3,1)
-Agent 7: 0:7(3,1) 1:7(3,1) 2:6(2,1) 3:5(1,1) 4:9(1,2) 5:8(0,2)
-Agent 8: 0:8(0,2) 1:12(0,3) 2:13(1,3) 3:13(1,3) 4:13(1,3) 5:13(1,3)
-Agent 9: 0:9(1,2) 1:8(0,2) 2:12(0,3) 3:12(0,3) 4:12(0,3) 5:12(0,3)
-Agent 10: 0:10(2,2) 1:10(2,2) 2:10(2,2) 3:6(2,1) 4:5(1,1) 5:6(2,1)
-Agent 11: 0:11(3,2) 1:11(3,2) 2:11(3,2) 3:15(3,3) 4:11(3,2) 5:15(3,3)
-Agent 12: 0:12(0,3) 1:13(1,3) 2:9(1,2) 3:9(1,2) 4:8(0,2) 5:4(0,1)
-Agent 13: 0:13(1,3) 1:9(1,2) 2:5(1,1) 3:1(1,0) 4:2(2,0) 5:2(2,0)
-Agent 14: 0:14(2,3) 1:14(2,3) 2:14(2,3) 3:10(2,2) 4:14(2,3) 5:10(2,2)
-Agent 15: 0:15(3,3) 1:15(3,3) 2:15(3,3) 3:14(2,3) 4:15(3,3) 5:14(2,3)
-'''
+>Agent 0: 0:0(0,0) 1:4(0,1) 2:8(0,2) 3:8(0,2) 4:4(0,1) 5:5(1,1)
+>Agent 1: 0:1(1,0) 1:0(0,0) 2:4(0,1) 3:4(0,1) 4:0(0,0) 5:0(0,0)
+>Agent 2: 0:2(2,0) 1:1(1,0) 2:0(0,0) 3:0(0,0) 4:1(1,0) 5:1(1,0)
+>Agent 3: 0:3(3,0) 1:3(3,0) 2:7(3,1) 3:11(3,2) 4:10(2,2) 5:9(1,2)
+>Agent 4: 0:4(0,1) 1:5(1,1) 2:1(1,0) 3:2(2,0) 4:3(3,0) 5:3(3,0)
+>Agent 5: 0:5(1,1) 1:6(2,1) 2:2(2,0) 3:3(3,0) 4:7(3,1) 5:11(3,2)
+>Agent 6: 0:6(2,1) 1:2(2,0) 2:3(3,0) 3:7(3,1) 4:6(2,1) 5:7(3,1)
+>Agent 7: 0:7(3,1) 1:7(3,1) 2:6(2,1) 3:5(1,1) 4:9(1,2) 5:8(0,2)
+>Agent 8: 0:8(0,2) 1:12(0,3) 2:13(1,3) 3:13(1,3) 4:13(1,3) 5:13(1,3)
+>Agent 9: 0:9(1,2) 1:8(0,2) 2:12(0,3) 3:12(0,3) 4:12(0,3) 5:12(0,3)
+>Agent 10: 0:10(2,2) 1:10(2,2) 2:10(2,2) 3:6(2,1) 4:5(1,1) 5:6(2,1)
+>Agent 11: 0:11(3,2) 1:11(3,2) 2:11(3,2) 3:15(3,3) 4:11(3,2) 5:15(3,3)
+>Agent 12: 0:12(0,3) 1:13(1,3) 2:9(1,2) 3:9(1,2) 4:8(0,2) 5:4(0,1)
+>Agent 13: 0:13(1,3) 1:9(1,2) 2:5(1,1) 3:1(1,0) 4:2(2,0) 5:2(2,0)
+>Agent 14: 0:14(2,3) 1:14(2,3) 2:14(2,3) 3:10(2,2) 4:14(2,3) 5:10(2,2)
+>Agent 15: 0:15(3,3) 1:15(3,3) 2:15(3,3) 3:14(2,3) 4:15(3,3) 5:14(2,3)
+
 
 The "Start and goal vertices" part tells you what the starts/goals are. You may notice that the start is actually the row major ordering of the agents and the goals are randomly selected. In the paper, it was the other way -- the goals follow the row major ordering. The "Solution path set" part is the solution, with each line corresponding to one agent. Each line is essentially a path with the format [step:vertex number:(x,y)]. Note that the ":(x,y)" part may be empty, depending on how the graph is constructed. So the above is a 5-step path for 16 agents. 
 
 To create and solve a randome problem with 15 start/goal pairs on a 15x15 grid with 20% vertices removed to simulate obstacles, run
 
-> java -cp mapp.jar;gurobi.jar projects.multipath.advanced.Main 2
+>java -cp mapp.jar;gurobi.jar projects.multipath.advanced.Main 2
 
 You will get an out put similar to the following:
 
-> Solving a randomly generated multi-agent path planning problem on a 15x15 grid with 20% obstacles and 15 agents, with 60 second time limit.
+>Solving a randomly generated multi-agent path planning problem on a 15x15 grid with 20% obstacles and 15 agents, with 60 second time limit.
 
 >Printing adjacency list of the graph:
 >0: 12,
