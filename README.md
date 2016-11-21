@@ -1,3 +1,5 @@
+### Optimal Multi-Robot Path Planning on Graphs
+
 Source code used in the following work 
 
 J. Yu and S. M. LaValle. Planning Optimal Paths for Multiple Robots on Graphs. 
@@ -5,7 +7,11 @@ In 2013 IEEE International Conference on Robotics and Automation (ICRA 2013).
 
 Latest manuscript: https://arxiv.org/pdf/1204.3830v4.pdf
 
-##Description
+### Requires 
+
+Gurobi (6.5+): http://www.gurobi.com/
+
+###Description
 
 Here you will find the sources/binaries of the code in the paper containing a simple API. Due to multiple requests, I am releasing the source code in a rather raw form without documentation so use with discretion. The source is slightly newer than the binary release. To use the binary/API, you will need an x64 machine with 4-8GB memory, a 64bit JRE/JDK. You will also need to have an appropriate 64bit version of Gurobi installed (an academic license is free to obtain). Then you need to find the gurobi.jar and make sure that the Gurobi binaries are on your system path. 
 
